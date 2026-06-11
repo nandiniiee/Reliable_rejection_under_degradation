@@ -1,3 +1,6 @@
+#program used for generating embeddings of our cropped faces using arcface
+# and saving them in a dictionary for future use
+
 import os
 import cv2
 import pickle

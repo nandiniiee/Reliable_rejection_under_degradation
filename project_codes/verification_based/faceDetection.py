@@ -1,3 +1,5 @@
+#program used for face detection and crop using retina Face
+
 import cv2
 import os
 import time #to measure processing time

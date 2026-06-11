@@ -1,3 +1,6 @@
+#code for checking if arcface is working correctly or not
+#comparing two same images here to get 0.999-1 similatiy score for sanity check
+
 import os
 import cv2
 import random

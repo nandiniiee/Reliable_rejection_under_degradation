@@ -1,3 +1,7 @@
+#program for generating the embedding of the probe
+#coppring, resizing the probe using retina face and creating embeddings using arcface
+#comparing the probe embedding then with saved database embeddings in the dictionary
+
 import os
 import cv2
 import pickle

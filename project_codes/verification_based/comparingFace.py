@@ -1,3 +1,5 @@
+#this program is used for comparing two faces (1:1 comparing)
+
 import os
 import cv2
 from insightface.model_zoo import get_model

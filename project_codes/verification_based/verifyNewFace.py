@@ -1,3 +1,7 @@
+#old program we wrote where we generate the database embeddings everytime this program runs
+#not saving the databse embeddings
+#also verifying with the probe image and giving a similarity score
+
 import os
 import cv2
 import numpy as np
