@@ -17,7 +17,7 @@ with open("gallery_embeddings.pkl", "rb") as f:
 print("Gallery embeddings loaded successfully")
 
 # Probe Image Path
-probe_image_path = "probe_images/probe1.jpg"
+probe_image_path = "probe_images/modi.jpg"
 img = cv2.imread(probe_image_path)
 if img is None:
     print("Probe image not found")
@@ -45,6 +45,9 @@ face_crop = img[y1:y2, x1:x2]
 if face_crop.size == 0:
     print("Invalid face crop")
     exit()
+
+#temporary check for face crop
+cv2.imwrite("debug_crop.jpg", face_crop)
 
 # Preprocessing for ArcFace
 face_crop = cv2.cvtColor(face_crop, cv2.COLOR_BGR2RGB)

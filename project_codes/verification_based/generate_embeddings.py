@@ -25,11 +25,19 @@ for image_file in os.listdir(gallery_path):
 
     #generating embedding
     embedding = arcface.get_feat(img)[0]
+    gallery_embeddings[name]=embedding
+    print("\nDictionary keys:")
+    print(gallery_embeddings.keys())
     print(f"Generated embedding for {name}")
+print(len(gallery_embeddings))
 
 # Save embeddings
 with open("gallery_embeddings.pkl", "wb") as f:
     pickle.dump(gallery_embeddings, f)
+
+# Read it back
+with open("gallery_embeddings.pkl", "rb") as f:
+    data = pickle.load(f)
 
 print("\nGallery embeddings saved successfully.")
 print(f"Total identities: {len(gallery_embeddings)}")

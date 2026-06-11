@@ -43,8 +43,8 @@ def get_embedding(image_path):
 
 
 # image paths
-image1_path = "query_images/yuvaansh.jpeg"
-image2_path = "query_images/nandini.jpeg"
+image1_path = "probe_images/gates.jpg"
+image2_path = "database_images/billGates.jpg"
 
 # embeddings for imput images
 embedding1 = get_embedding(image1_path)
