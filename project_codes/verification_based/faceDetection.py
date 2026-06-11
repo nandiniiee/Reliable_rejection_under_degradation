@@ -9,7 +9,7 @@ print("TensorFlow version:", tf.__version__)
 print("GPUs available:", tf.config.list_physical_devices('GPU'))
 
 #input and output folder
-input_root = "dataset_fiveFaces"
+input_root = "database_images"
 output_root = "cropped_faces"
 
 os.makedirs(output_root, exist_ok=True)
