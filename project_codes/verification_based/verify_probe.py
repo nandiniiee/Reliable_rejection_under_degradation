@@ -21,7 +21,7 @@ with open("gallery_embeddings.pkl", "rb") as f:
 print("Gallery embeddings loaded successfully")
 
 # Probe Image Path
-probe_image_path = "probe_images/cleanImages/modi.jpg"
+probe_image_path = "probe_images/cleanImages/gates145.jpg"
 img = cv2.imread(probe_image_path)
 if img is None:
     print("Probe image not found")
