@@ -1,9 +1,7 @@
-# ============================================================
 # FACE VERIFICATION PROJECT
 # Verification Based Approach using ArcFace + Cosine Similarity
 # Experiments 1 & 2: Closed Set Accuracy + Calibration
 # Run: python verify_probe.py
-# ============================================================
 
 import os
 import cv2
@@ -14,9 +12,7 @@ from retinaface import RetinaFace
 from insightface.model_zoo import get_model
 from sklearn.metrics.pairwise import cosine_similarity
 
-# ============================================================
 # STEP 1 — LOAD ARCFACE MODEL
-# ============================================================
 model_path = os.path.expanduser(
     "~/.insightface/models/buffalo_l/w600k_r50.onnx")
 arcface = get_model(model_path)
